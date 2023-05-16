@@ -74,7 +74,7 @@ async def predict(
 
     return {
         'class': predicted_class,
-        # 'details':get_class_response(predicted_class),
+        'details':get_class_response(predicted_class),
         'confidence': float(confidence)
     }
 
